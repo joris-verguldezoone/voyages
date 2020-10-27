@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Japan.ttf';
+    src: url(../font/Japan.ttf);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+body {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: pink;
+}
+
+#titre_presentation_generale {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Japan.ttf';
+    font-size: 55px;
+}
+
+.section_flex_box {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
+    justify-content: space-evenly;
+}
+
+.box_japon {
+    display: flex;
+    flex-direction: column;
+}
+
+.img_pres {
+    border-radius: 80px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Japan.ttf';
+    font-size: 40px;
+}
+
+.titre_presentation_cate {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: 'Japan.ttf';
+    font-size: 55px;
+}
