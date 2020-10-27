@@ -12,7 +12,11 @@
     height: 0px;
 }
 
-body {
+html {
+    scroll-behavior: smooth;
+}
+
+main {
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-color: pink;
@@ -20,8 +24,8 @@ body {
 
 #titre_presentation_generale {
     text-align: center;
-    margin-top: 2%;
     margin-bottom: 2%;
+    margin-top: 2%;
     font-family: 'Japan.ttf';
     font-size: 55px;
 }
@@ -46,6 +50,7 @@ h2 {
     text-align: center;
     font-family: 'Japan.ttf';
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .titre_presentation_cate {
@@ -54,4 +59,41 @@ h2 {
     margin-bottom: 2%;
     font-family: 'Japan.ttf';
     font-size: 55px;
+}
+
+.bg_img_sakura {
+    background-image: url(../images/parc_ueno_japon.jpg);
+    height: 70vh;
+}
+
+.bg_img_montfuji {
+    background-image: url(../images/montfuji_japon.jpg);
+    height: 70vh;
+}
+
+.bg_img_harakufu {
+    background-image: url(../images/paysage_japon.jfif);
+    height: 70vh;
+}
+
+.bg_img_shibuya {
+    background-image: url(../images/shibuya_japon.jpg);
+    height: 70vh;
+}
+
+.bg_img_sakura,
+.bg_img_montfuji,
+.bg_img_harakufu,
+.bg_img_shibuya {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+}
+
+.presentation {
+    height: 50vh;
 }

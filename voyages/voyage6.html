@@ -9,8 +9,11 @@
 </head>
 
 <body>
-    <a href="#titre_presentation_generale"><img src="../images/japon.jpg" alt="Le Japon"></a>
+
     <main>
+
+        <a href="#titre_presentation_generale"><img src="../images/japon.jpg" alt="Le Japon"></a>
+
         <h1 id="titre_presentation_generale">Découvrez le Japon avec moi !</h1>
         <article class="section_flex_box">
             <section class="box_japon">
@@ -18,7 +21,7 @@
                     <h2>Découvrez le parc Ueno</h2>
                 </div>
                 <div>
-                    <img src="../images/ueno_japon.jpg" alt="Parc ueno_japon" href="#ueno" class="img_pres">
+                    <a href="#ueno"><img src="../images/ueno_japon.jpg" alt="Parc ueno_japon" class="img_pres"></a>
                 </div>
             </section>
             <section class="box_japon">
@@ -26,7 +29,7 @@
                     <h2>Découvrez le Mont Fuji</h2>
                 </div>
                 <div>
-                    <img src="../images/montfuji_japon.jpg" alt="Mont Fuji - Japon" href="#montfuji" class="img_pres">
+                    <a href="#montfuji"><img src="../images/montfuji_japon.jpg" alt="Mont Fuji - Japon" class="img_pres"></a>
                 </div>
             </section>
         </article>
@@ -36,7 +39,7 @@
                     <h2>Découvrez les temples du Japon</h2>
                 </div>
                 <div>
-                    <img src="../images/temple_japon.jpg" alt="Harakuju" href="#harakufu" class="img_pres">
+                    <a href="#harakufu"><img src="../images/temple_japon.jpg" alt="Harakuju" class="img_pres"></a>
                 </div>
             </section>
             <section class="box_japon">
@@ -44,15 +47,35 @@
                     <h2>Découvrez le quartier de Shibuya</h2>
                 </div>
                 <div>
-                    <img src="../images/shibuya_japon.jpg" alt="Shibuya" href="#shibuya" class="img_pres">
+                    <a href="#shibuya"><img src="../images/shibuya_japon.jpg" alt="Shibuya" class="img_pres"></a>
                 </div>
             </section>
         </article>
         <div class="transparence">
         </div>
-        <article>
-            <h1 class="titre_presentation_cate"><u>Parc Ueno, et ses sublimes Sakura</u></h1>
-            <section>
+        <article id="ueno">
+            <div class="bg_img_sakura"></div>
+            <section class="presentation">
+                <h1 class="titre_presentation_cate"><u>Parc Ueno, et ses sublimes Sakura</u></h1>
+                <p></p>
+            </section>
+        </article>
+        <article id="montfuji">
+            <div class="bg_img_montfuji"></div>
+            <section class="presentation">
+                <h1 class="titre_presentation_cate"><u>Le Mont Fuji</u></h1>
+            </section>
+        </article>
+        <article id="harakufu">
+            <div class="bg_img_harakufu"></div>
+            <section class="presentation">
+                <h1 class="titre_presentation_cate"><u>Les temples d'Harakuju</u></h1>
+            </section>
+        </article>
+        <article id="shibuya">
+            <div class="bg_img_shibuya"></div>
+            <section class="presentation">
+                <h1 class="titre_presentation_cate"><u>Le quartier de Shibuya</u></h1>
             </section>
         </article>
     </main>
