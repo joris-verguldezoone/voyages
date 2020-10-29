@@ -336,26 +336,3 @@
     flex-direction: column;
     justify-content: space-between;
 }
-
-/*footer*/
-#footer_pays_bas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 15vh;
-    background-color: lightblue;
-
-}
-
-.footer_article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 33.3%;
-    align-items: center;
-}
-
-.dev_img_dimension {
-    height: 80px;
-    width: 80px;
-}

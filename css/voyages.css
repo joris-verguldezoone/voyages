@@ -99,3 +99,57 @@ content:
     width: 25vh;
     text-align: center;
 }
+
+/* FOOTER */
+/*footer*/
+#footer_pays_bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: lightblue;
+
+}
+
+.footer_article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 33.3%;
+    align-items: center;
+}
+
+.dev_img_dimension {
+    height: 80px;
+    width: 80px;
+}
+
+/*FONT*/
+
+@font-face {
+    font-family: 'Zenzai-Itacha.ttf';
+    src: url(../font/Zenzai-Itacha.ttf);
+}
+
+@font-face {
+    font-family: 'reseaux';
+    src: url('../font/reseaux/Social_Shapes.ttf');
+}
+
+.footer_article_signature {
+    font-family: 'Zenzai-Itacha.ttf';
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.3%;
+    align-items: center;
+}
+
+.reseaux {
+    font-family: 'reseaux';
+    font-size: 1em;
+    color: white;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
