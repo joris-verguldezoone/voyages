@@ -30,14 +30,23 @@
     background-image: url(../images/temple_meiji_jingu.jpg);
 }
 
-.bg_img_shibuya {
+.bg_img_pokemon {
     background-image: url(../images/shibuya_quartier.jpg);
 }
 
 .bg_img_sakura,
 .bg_img_montfuji,
-.bg_img_meiji,
-.bg_img_shibuya {
+.bg_img_meiji {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+.bg_img_pokemon {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -82,6 +91,18 @@
     width: 100%;
     margin-left: 5%;
     border-radius: 5mm;
+}
+
+#dim_img_voeux_meiji {
+    width: 80%;
+    margin-top: -5%;
+    margin-left: 10%;
+}
+
+#dim_img_rondoudou {
+    width: 20%;
+    margin-left: 15%;
+    margin-top: 7%;
 }
 
 
@@ -156,6 +177,12 @@ h2 {
     height: 100vh;
     font-size: 20px;
     margin-right: 30px;
+    text-align: justify;
+}
+
+#presentation_guide {
+    height: 150vh;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -257,4 +284,59 @@ ul {
 td {
     text-align: center;
     padding: 15px;
+}
+
+.meiji_box1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.meiji_text_flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin_text_meiji {
+    margin: 7%;
+}
+
+iframe {
+    margin-left: -10%;
+    margin-top: -3%;
+}
+
+.spe_margin_meiji {
+    margin-left: 5%;
+    padding-right: 8%;
+    margin-top: 30px;
+}
+
+.p_meiji_temple {
+    margin-right: 15%;
+    margin-top: 3%;
+}
+
+#box_presentation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#section_presentation_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#presentation_ecrit {
+    margin-left: -20%;
+}
+
+#formulaire {
+    text-align: center;
+}
+
+hr {
+    width: 30%;
+    margin-left: 36%;
 }
