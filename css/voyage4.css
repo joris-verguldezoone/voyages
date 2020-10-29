@@ -1,92 +1,141 @@
 /* Voyage 4: Russia */
 
+/* Variables */
+:root {
+	--height-one: 800px;
+	--height-two: 600px;
+	--height-three: 500px;
+	--height-four: 400px;
+	--prim-clr: black;
+	--sec-clr: white;
+	--ter-clr: #000075;
+}
 /* ======== GENERIC ========== */
-/* @media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-} */
+/* title */
+@font-face {
+  font-family: Plaster;
+	src: url(../fonts/Plaster-Regular.ttf);
+}
+@font-face {
+	font-family: Saudagar;
+	src: url(../fonts/Saudagar.ttf);
+}
 .voyage4 {
-	/* height: 100%; */
+	height: 100%;
+	width: 100vw;
 	margin: 0;
-	background: rgba(255, 99, 71, 0.425);
+	background: #992C1B;
 }
 .voyage4 .text {
-	/* a changer le moment venu */
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	margin: 40px 30px;
-	font-size: 2em;
+	/* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+	font-family: Saudagar;
+	color: white;
+	font-weight: 900;
+	word-spacing: .2em;
+	letter-spacing: .1em;
+	text-indent: 3em;
+	margin: 0 3em;
+	font-size: 1.6em;
 	line-height: 1.5;
 	text-align: justify;
+	/* height: 100vh; */
+}
+.voyage4 section {
+	display: block;
+}
+.name {
+	font-style: italic;
+}
+.voyage4 ul li {
+	list-style-position: inside;
+}
+strong {
+	font-size: 1.1em;
+	font-weight: 900;
+	color: black;	
 }
 /* ========= SECTIONS ========== */
-.sec-one {
-	height: 1000px;
-	background: wheat;
+.voyage4 .sec-one {
+	height: var(--height-one);
 }
-.sec-two {
-	height: 1000px;
-	background: rgb(214, 132, 25);
-}
-.sec-three {
-	height: 1000px;
-	background: violet;
-}
-.sec-four {
-	height: 1000px;
-	background: purple;
+/* ========= TITLE ============= */
+.voyage4 .title {
+	font-size: 1.8em;
+	color: var(--prim-clr);
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: Plaster;
+	margin-right: 2em;
+	text-align: right;
 }
 /* ========= PARALLAX ========== */
-.parallax {
-	/* height: 1000px; */
+.voyage4 .parallax {
 	background-attachment: fixed;
-	/* height: 1000px; */
-	/* min-height: 800px;  */
-  /* background: center no-repeat url(../images/russia1.jpg); */
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
 }
-#title1 {
-	/* width: 50%; */
-	/* float: right; */
-	background-color: rgba(255, 255, 255, 0.459);
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 6em;
-	color: black;
-	text-align: right;
-	margin-right: 50px;
-}
-#title1 h1 {
-	/* margin-right: 50px; */
-	margin-bottom: 10px;
 
-}
 /* ====== PARALLAX BACKGROUND ======= */
-.one {
-	height: 800px;
-	/* background: center no-repeat url(../images/russia1.jpg); */
+/* ICE */
+.voyage4 .one {
+	height: var(--height-one);
+	background: center no-repeat url(../images/russia1.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
-.two {
-	height: 650px;
-	/* background: center no-repeat url(../images/russia2.jpg); */
+/* military */
+.voyage4 .two {
+	height: var(--height-two);
+	background: center no-repeat url(../images/russia2.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 }
-/* .three {
-	height: 400px;
+/* Modern place */
+.voyage4 .three {
+	height: var(--height-three);
 	background: center no-repeat url(../images/russia3.jpg);
 	background-attachment: fixed;
 	background-size: cover;
-} */
-
-#intro {
-	height: 600px;
-	color: black;
-	/* background-clip: text; */
-	/* background: violet; */
-	/* background-color: slategray; */
-	/* background: darkgoldenrod; */
+}
+.voyage4 .four {
+	height: var(--height-four);
+	background: center no-repeat url(../images/russia4.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.voyage4 .five {
+	/* width: 100vw; */
+	height: var(--height-one);
+	background: top no-repeat url(../images/russia5.jpg);
+	background-attachment: fixed;
+	background-size: contain;
+	/* background-position: top; */
+}.voyage4 .six {
+	height: var(--height-four);
+	background: top no-repeat url(../images/russia6.jpg);
+	background-attachment: fixed;
+	background-size: contain;
+}
+.voyage4 .seven {
+	height: var(--height-one);
+	background: bottom no-repeat url(../images/russia7.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+.voyage4 .eight {
+	height: var(--height-two);
+	background: center no-repeat url(../images/russia8.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+}
+#debut {
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	justify-content: right;
+	height: 100vh;
+}
+#stpeters {
+	height: 100vh;
+	z-index: 999;
+}
+#special {
+	color: var(--sec-clr);
 }
