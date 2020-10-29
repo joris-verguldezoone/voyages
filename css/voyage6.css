@@ -62,6 +62,10 @@
 
 /*dimension des images*/
 
+#img_page_accueil {
+    width: 100%;
+}
+
 #dim_img_temple_ueno {
     width: 80%;
     margin-left: 10%;
@@ -339,4 +343,20 @@ iframe {
 hr {
     width: 30%;
     margin-left: 36%;
+}
+
+select#choix {
+    font-size: 15px;
+    padding-right: 5%;
+}
+
+#tableau_formulaire {
+    border-collapse: collapse;
+    border-spacing: 9px;
+    width: 100%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    border-radius: 0.3em;
 }
