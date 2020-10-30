@@ -1,9 +1,12 @@
+/*header*/
+
 #block_1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     justify-content: center;
     padding: 50px;
+    background-color: aliceblue;
 }
 
 .b1_sous_block {
@@ -63,19 +66,19 @@
     word-spacing: 0.3em;
 }
 
-#b1_blank_color {
-    background-color: red;
-    height: 1vh;
-    width: 100%;
-}
+
 
 /*block 2*/
 #block_2 {
-    height: 80vh;
     padding: 50px;
     display: flex;
     justify-content: center;
     flex-direction: row;
+    background-color: whitesmoke;
+}
+
+#hi_b2 {
+    background-color: whitesmoke;
 }
 
 #b2_sous_block {
@@ -83,9 +86,6 @@
     width: 80%;
 }
 
-/*.b2_text{
-
-}*/
 .b2_gallerie {
     display: flex;
     flex-direction: row;
@@ -99,6 +99,7 @@
     line-height: 1.5;
     text-align: justify;
     word-spacing: 0.3em;
+    font-family: 'Lato', sans-serif;
 }
 
 .b2_text_intro {
@@ -108,3 +109,92 @@
 }
 
 /*b3_block*/
+#b3_block {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+#b3_sous_block {
+    padding: 30px;
+    width: 80%;
+}
+
+#h1_b3 {
+    background-color: aliceblue;
+}
+
+h1 {
+    padding-left: 2%;
+    padding-top: 2%;
+    font-size: 1.5em;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/*bas de page*/
+#bas_de_page {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: whitesmoke;
+
+}
+
+#reservation {
+    flex-direction: row;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 70%;
+    height: 45vh;
+    border: 1px black solid;
+    border-radius: 1em;
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    background-image: url('../images/Ireland/i_background_reservation.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+#guide_img_dimension {
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#article_reservation {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*derniere section*/
+#guide_note {
+    display: flex;
+    text-align: right;
+    background-color: aliceblue;
+}
+
+#guide_note article {
+    width: 80%;
+    padding: 30px;
+}
+
+.description_guide {
+    font-size: 1.2em;
+    line-height: 1.5;
+    word-spacing: 0.3em;
+    font-family: 'Lato', sans-serif;
+}

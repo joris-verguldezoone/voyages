@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="../css/voyages.css">
     <link rel="stylesheet" href="../css/voyage1.css">
     <link rel="icon" type="png" href="../images/P-B_flag_icon_head.png">
+    <!--police p_-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!--police h1-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Pays-Bas</title>
 </head>
@@ -295,10 +299,7 @@
         <div id="blank_color_end"></div>
         <section id="bas_de_page">
             <section id=reservation>
-                <article class="article_reservation">
-                    <img alt="joris_guide" id="guide_img_dimension" src="../images/netero.png">
-                    <p>Joris, jeune guide touristique <br />passioné de voyage</p>
-                </article>
+
                 <article class="article_reservation">
                     <p>Envie de voyager ? Laissez vous séduire par les Pays-bas et les paysages authentiques. Visiter
                         les villes principales du pays
@@ -306,12 +307,44 @@
                         Profitez de prix cassés pour la fin de saison 2020, des meilleurs hotels et d'une prise en
                         charge de vos transport par vos super guides!
                     </p>
-                    <p class="bouton_reservation">bouton de reservation</p>
+                </article>
+                <article class="article_reservation">
+                    <form>
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" placeholder="LeFrançais">
+
+                        <label for="prenom">Prenom</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="François">
+
+                        <label for="date_de_naissance">Date de naissance</label>
+                        <input type="date" id="date_de_naissance" name="date_de_naissance">
+
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email">
+
+                        <label for="email">Numéro de carte bancaire</label>
+                        <!--Serien tu met ta carte le sang-->
+                        <input type="number" id="email" name="email" placeholder="0909 4949 2733 4484">
+
+                        <label for="code_securite">Code de sécurité</label>
+                        <input type="number" id="code_securite" name="code_securite" placeholder="122">
+                    </form>
+
+                    <a href="../voyages.html">
+                        <p class="bouton_reservation">Réserver un séjour</p>
+                    </a>
                 </article>
             </section>
         </section>
+        <section id="guide_note">
+            <article> <img alt="joris_guide" id="guide_img_dimension" src="../images/netero.png">
+                <p class="description_guide">Joris, jeune guide touristique <br />passioné de voyage</p>
+            </article>
+        </section>
+
+
     </main>
-    <footer id="footer_pays_bas">
+    <footer id="footer_partage">
         <article class="footer_article_signature">
             <img alt="joris dev" class="dev_img_dimension" src="../images/netero.png">
             <p>HARDJOJO</p>
@@ -323,7 +356,7 @@
             <a class="reseaux" href="https://www.youtube.com" target="_blank">ú</a>
         </article>
         <article class="footer_article">
-            <a class="bouton_reservation">Nous contacter</a>
+            <a href="mailto:lemeilleur_site_voyage@bg+pro.com" class="bouton_contact">Nous contacter</a>
         </article>
 
     </footer>

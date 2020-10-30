@@ -1,7 +1,6 @@
 #body_pays_bas {
     background-image: url('../images/pays_bas_background_cover.jpeg');
     background-repeat: no-repeat;
-
 }
 
 /*Main*/
@@ -43,7 +42,6 @@
 .presentation {
     width: 80%;
     padding: 30px;
-
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -197,6 +195,13 @@
     text-align: justify;
     word-spacing: 0.3em;
     width: 90%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+
 }
 
 /*museum*/
@@ -284,8 +289,8 @@
 }
 
 #guide_img_dimension {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
 }
 
 #article_reservation {
@@ -335,4 +340,31 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/*derniere section*/
+#guide_note {
+    display: flex;
+    text-align: right;
+}
+
+#guide_note article {
+    width: 80%;
+    padding: 30px;
+}
+
+.description_guide {
+    font-size: 1.2em;
+    line-height: 1.5;
+    word-spacing: 0.3em;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
