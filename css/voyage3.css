@@ -1,0 +1,120 @@
+/* Voyage 3 */
+
+/* background: rgb(0,39,118); */
+/* background: radial-gradient(circle, rgba(0,39,118,1) 0%, rgba(254,223,0,1) 54%, rgba(0,150,56,1) 100%); */
+
+/* ========= VARIABLES ======== */
+:root {
+    --gradient-one: radial-gradient(circle, rgba(0,39,118,1) 0%, rgba(254,223,0,1) 54%, rgba(0,150,56,1) 100%);
+}
+/* =========== FONTS ========== */
+@font-face {
+    font-family: title;
+    src: url(../fonts/GUARALDO.ttf);
+}
+@font-face {
+    font-family: port;
+    src: url(../fonts/);
+}
+/* ============== GENERIC =========*/
+
+.voyage3 {
+    background: rgb(218, 172, 139);
+    font-size: 1.5em;
+}
+.voyage3 p {
+    text-align: justify;
+    text-indent: 2em;
+}
+.flex {
+    display: flex;
+}
+#link-one {
+    display: flex;
+}
+#link-two {
+    display:flex;
+    justify-content: space-evenly;
+}
+.voyage3 #rio-janeiro h1{
+    color: white;
+    text-shadow: 2px 2px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: title;
+    height: 300px;
+    width: 95%;
+    font-size: 3.5em;
+    background: top no-repeat url(../images/brazil-header3.jpg);
+    letter-spacing: .1em;
+    background-size: cover;
+    border: .25em solid white;
+}
+.voyage3 article h2{
+    text-align: center;
+}
+.voyage3 #selector {
+    top: 100px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.voyage3 #selector a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 300px;
+    border: 10px solid white;
+}
+.voyage3 #selector a div{
+    text-align: center;
+    border: .2em dotted black
+}
+.voyage3 a:active, .voyage3 a:visited {
+    text-decoration: none;
+}
+/* ============ BG-Links =============*/
+#corcovado {
+    background: center no-repeat url(../images/corcovado2.jpg);
+    background-size: cover;
+}
+#pain {
+    background: center no-repeat url(../images/pao.jpg);
+    background-size: cover;
+}
+#copa {
+    background: center no-repeat url(../images/copa2.jpg);
+    background-size: cover;
+}
+#carnaval {
+    background: center no-repeat url(../images/carnaval.jpg);
+    background-size: cover;
+}
+#metro {
+    background: center no-repeat url(../images/metro.jpg);
+    background-size: cover;
+}
+
+/* =========================== */
+#selector a {
+    text-transform: uppercase;
+    font-family: title;
+    font-size: .9em;
+    text-decoration: none;
+}
+#selector a:link, #selector a:visited, #selector a:active {
+    color: white;
+}
+#selector a:hover{
+    text-decoration: underline;
+}
+#selector a {
+    text-shadow: 2px 2px black;
+}
+#selector {
+    height: 500px;
+}

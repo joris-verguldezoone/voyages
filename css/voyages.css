@@ -19,7 +19,9 @@
     justify-content: space-between;
 }
 
-
+.a_black {
+    color: black;
+}
 
 .header_nav ul {
     list-style-type: none;
@@ -34,7 +36,6 @@
 .header_nav a {
     display: block;
     text-decoration: none;
-    color: black;
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -48,7 +49,7 @@
 .sous {
     display: none;
     box-shadow: 0px 1px 2px #CCC;
-    background: white;
+    background-color: rgba(250, 250, 250, 0.5);
     position: absolute;
     width: 10%;
     z-index: 1000;
@@ -59,7 +60,7 @@
 
 }
 
-/*titre gras pour le déroulant*/
+/*titre gras pour le d�roulant*/
 .sous>.li_deroulant:nth-child(1) {
     font-weight: bold;
     padding-top: 10px;
@@ -73,11 +74,7 @@
 
 
 
-/*.sous a {
-    padding: 10px;
-    width: 20vh;
 
-}*/
 
 .sous a:hover {
     border-bottom: none;
@@ -98,6 +95,7 @@ content:
 .bouton_header {
     width: 25vh;
     text-align: center;
+    color: white;
 }
 
 /* FOOTER */
@@ -222,4 +220,125 @@ content:
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+/*Guillaume le s*/
+/*Accueil*/
+.accueil body {
+    /* background: center no-repeat url(../images/word.jpg), black; */
+    /* mix-blend-mode: hard-light; */
+    background-position: fixed;
+    background-size: cover;
+    margin: 0;
+    /* background: violet; */
+}
+
+.pict {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.pict h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background: plum; */
+    /* justify-content: center; */
+    /* align-items: baseline; */
+    color: rgba(255, 255, 255, 0.76);
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    font-size: 4em;
+    /* writing-mode: vertical-lr;
+    text-orientation: sideways-right; */
+    position: relative;
+    top: -13%;
+}
+
+.select {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 650px;
+    /* background: violet; */
+}
+
+.select div {
+    height: 42em;
+    width: 16%;
+    /* width: 150px; */
+    border: 0 solid rgba(0, 0, 0, 0);
+    transition: border 700ms ease-in-out;
+    transition: width 400ms ease-in-out;
+    /* transition: color 500ms ease-in-out; */
+}
+
+#one {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: tomato; */
+    background: center no-repeat url(../images/netherland.jpg);
+    background-size: cover;
+}
+
+#one h3 {
+    width: 80%;
+}
+
+#two {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: rgb(142, 255, 13); */
+    background: center no-repeat url(../images/irland.jpg);
+
+    background-size: cover;
+}
+
+#three {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: rgb(13, 166, 255); */
+    background: center no-repeat url(../images/brazil2.jpg);
+    background-size: cover;
+}
+
+#four {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: rgb(146, 5, 165); */
+    background: center no-repeat url(../images/russia.jpg);
+    background-size: cover;
+}
+
+#five {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: rgb(165, 5, 5); */
+    background: center no-repeat url(../images/australia2.jpg);
+
+    background-size: cover;
+}
+
+#six {
+    /* height: 250px; */
+    /* width: 15%; */
+    /* background: rgb(255, 217, 1); */
+    background: center no-repeat url(../images/japan.jpg);
+    background-size: cover;
+}
+
+.pict:hover {
+    color: rgb(0, 0, 0);
+    border: 4px solid white;
+    /* font-size: 1em; */
+    /* text-shadow: 2px 2px white; */
+    width: 22%;
+    /* justify-content: baseline; */
+    /* outline: 5px solid white; */
+}
+
+#second-section {
+    /* background: plum; */
+    margin-top: 200px;
+    height: 1000px;
+    /* background: yellow; */
 }
