@@ -15,6 +15,115 @@
     height: 0px;
 }
 
+body {
+    background-image: url(../images/japon.jpg);
+}
+
+#transparence_header {
+    height: 81vh;
+}
+
+
+/*Accueil*/
+
+.header_container {
+    height: 15vh;
+    background-color: rgba(1, 1, 1, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.header_nav {
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header_nav ul {
+    list-style-type: none;
+}
+
+.header_nav ul li {
+    width: 16vh;
+    /*largeur du content_img*/
+}
+
+.header_nav a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.header_nav a:hover {
+    color: orange;
+    border-bottom: 2px solid green;
+}
+
+
+/*menu deroulant*/
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background: white;
+    position: absolute;
+    width: 10%;
+    z-index: 1000;
+}
+
+.header_nav>ul li:hover .sous {
+    display: block;
+}
+
+
+/*titre gras pour le déroulant*/
+
+.sous>.li_deroulant:nth-child(1) {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.li_deroulant {
+    font-weight: bold;
+}
+
+
+/*.sous a {
+    padding: 10px;
+    width: 20vh;
+}*/
+
+.sous a:hover {
+    border-bottom: none;
+    background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant {
+    padding: 15px;
+    font-size: 30px;
+    margin-right: 70px;
+}
+
+
+/*
+.deroulant>a::after {;
+content:
+}
+*/
+
+.bouton_header {
+    width: 25vh;
+    text-align: center;
+}
+
+
+/*fin de header*/
+
 
 /*toutes les images bg*/
 
@@ -359,4 +468,130 @@ select#choix {
     align-items: center;
     margin-top: 3%;
     border-radius: 0.3em;
+}
+
+
+/* FOOTER */
+
+#footer_partage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: pink;
+}
+
+.footer_article {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 33.3%;
+    align-items: center;
+}
+
+.dev_img_dimension {
+    height: 80px;
+    width: 80px;
+}
+
+
+/*FONT*/
+
+@font-face {
+    font-family: 'Zenzai-Itacha.ttf';
+    src: url(../font/Zenzai-Itacha.ttf);
+}
+
+@font-face {
+    font-family: 'reseaux';
+    src: url('../font/reseaux/Social_Shapes.ttf');
+}
+
+.footer_article_signature {
+    font-family: 'Zenzai-Itacha.ttf';
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33.3%;
+    align-items: center;
+}
+
+.reseaux {
+    font-family: 'reseaux';
+    font-size: 3em;
+    color: white;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+}
+
+.footer_article a {
+    text-decoration: none;
+}
+
+
+/*bouton contacter*/
+
+.bouton_contact {
+    background-image: linear-gradient(to right, #141E30 0%, #243B55 51%, #141E30 100%)
+}
+
+.bouton_contact {
+    margin: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 1em;
+    display: block;
+}
+
+.bouton_contact {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.bouton_reservation {
+    background-image: linear-gradient(to right, #2980b9 0%, #2c3e50 51%, #2980b9 100%)
+}
+
+.bouton_reservation {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.bouton_reservation:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.article_reservation {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: justify;
+    word-spacing: 0.3em;
+    padding: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: lightslategray;
+    max-width: 30%;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
