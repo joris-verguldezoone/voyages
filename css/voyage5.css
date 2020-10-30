@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Australia.otf';
+    src: url(../font/Australia.otf);
+}
+
+
+/*images*/
+
+.bg_img_kangaroo {
+    background-image: url(../images/chemin_kangaroo_island.jpg);
+}
+
+.bg_img_sydney {
+    background-image: url(../images/opera_sydney.jpg);
+}
+
+.bg_img_australia {
+    background-image: url(../images/bg_img_kangourou.jpg);
+}
+
+.bg_img_kangaroo,
+.bg_img_sydney,
+.bg_img_australia {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+}
+
+#img_page_accueil {
+    width: 100%;
+}
+
+#dim_img_route_austra {
+    width: 130%;
+    margin-left: 5%;
+    margin-top: -2%;
+    border-radius: 5mm;
+}
+
+#dim_img_ile_ping {
+    border-radius: 5mm;
+    margin-top: -11%;
+    margin-right: 2%;
+}
+
+#dim_img_opera_sydney {
+    width: 70%;
+    border-radius: 5mm;
+    margin-top: -8%;
+}
+
+#dim_img_opera_interieur {
+    margin-left: 25%;
+}
+
+#dim_img_rondoudou {
+    width: 50%;
+}
+
+
+/*fin images*/
+
+.presentation {
+    font-size: 18px;
+    text-align: justify;
+}
+
+#titre_presentation_generale {
+    text-align: center;
+    margin-top: 3%;
+    font-family: 'Australia.otf';
+    font-size: 40px;
+}
+
+.titre_presentation_cate {
+    font-family: 'Australia.otf';
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2%;
+    font-family: 'Australia.otf';
+    font-size: 35px;
+}
+
+.section_flex_box {
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+
+.img_pres {
+    border-radius: 5mm;
+}
+
+.transparence {
+    height: 15vh;
+}
+
+.kangaroo_bloc_flex1 {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin-bottom: 10px;
+    text-indent: 45px;
+}
+
+#p_margin1 {
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+#p_margin2 {
+    margin-left: 34%;
+    margin-top: -11%;
+    margin-right: 2%;
+    text-align: justify;
+}
+
+.p_bloc_ile {
+    margin-left: 3%;
+    margin-right: 5%;
+    text-align: justify;
+}
+
+.p_descrip {
+    font-size: 20px;
+    margin-left: -20%;
+    margin-top: 3%;
+}
+
+#tableau_center {
+    margin-left: 25%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+#tableau_climat_austra {
+    text-align: center;
+    border-collapse: collapse;
+    width: 70%;
+    border: 2px solid;
+    border-radius: 5mm;
+}
+
+#tableau_climat_austra th {
+    font-size: 25px;
+    border: 1px solid black;
+    width: 30%;
+    height: 48px;
+}
+
+#tableau_climat_austra td {
+    border: 1px solid black;
+    width: 100px;
+    height: 55px;
+}
+
+tr {
+    text-align: center;
+}
+
+.color_orange {
+    background-color: #ffcc66;
+}
+
+.color_jaune {
+    background-color: #ffff66;
+}
+
+.color_jaune_clair {
+    background-color: #ffffcc;
+}
+
+.color_bleu {
+    background-color: #00ccff;
+}
+
+.color_bleu_fonce {
+    background-color: #6666ff;
+}
+
+#liste_puce {
+    margin-left: 5%;
+}
+
+#img_opera_bloc {
+    margin-left: 2%;
+}
+
+.p_opera {
+    margin-right: 5%;
+    margin-left: -16%;
+    margin-top: 4%;
+}
+
+#opera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ul {
+    margin-right: 3%;
+}
+
+#margin_opera_sydney {
+    margin: 3%;
+}
+
+#tableau_formulaire {
+    border-collapse: collapse;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 3%;
+    font-size: 20px;
+}
+
+select#choix {
+    font-size: 15px;
+    padding-right: 5%;
+}
+
+#box_presentation {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+#section_presentation_form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#presentation_ecrit {
+    margin-left: -20%;
+}
+
+#formulaire {
+    text-align: center;
+}
+
+#presentation_guide {
+    margin-bottom: 3%;
+}
