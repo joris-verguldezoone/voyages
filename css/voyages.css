@@ -136,7 +136,7 @@ content:
 
 .footer_article_signature {
     font-family: 'Zenzai-Itacha.ttf';
-    font-size: 1em;
+    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -342,7 +342,6 @@ content:
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* background: yellow; */
 }
 
 .article_2ndsection {
@@ -392,4 +391,12 @@ content:
 .flag_2ndsection {
     height: 80px;
     width: 100px;
+}
+
+.multi_signature {
+    display: flex;
+    flex-direction: row;
+    width: 33.3%;
+    justify-content: space-around;
+
 }
