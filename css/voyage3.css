@@ -5,63 +5,142 @@
 
 /* ========= VARIABLES ======== */
 :root {
-    --gradient-one: radial-gradient(circle, rgba(0,39,118,1) 0%, rgba(254,223,0,1) 54%, rgba(0,150,56,1) 100%);
+    --gradient-one: radial-gradient(circle, rgba(0, 39, 118, 1) 0%, rgba(254, 223, 0, 1) 54%, rgba(0, 150, 56, 1) 100%);
 }
+
 /* =========== FONTS ========== */
 @font-face {
-    font-family: title;
+    font-family: upper-title;
     src: url(../fonts/GUARALDO.ttf);
 }
+
 @font-face {
-    font-family: port;
-    src: url(../fonts/);
+    font-family: txt-title;
+    src: url(../fonts/Strawberry\ Blossom.ttf);
 }
-/* ============== GENERIC =========*/
+
+/* ============= GLOBAL =========== */
+.voyage3 article h2 {
+    font-family: txt-title;
+    font-size: 3em;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: .3em 0;
+    margin: 100px 30px;
+}
+
+.voyage3 p {
+    font-family: 'Palatino', 'Tiems New Roman', serif;
+    word-spacing: .3em;
+    text-align: justify;
+    line-height: 1.7em;
+    text-indent: 2em;
+    margin: 0 5%;
+    margin-bottom: 2em;
+}
+
+.voyage3>ul {
+    margin: 2% 5%;
+}
+
+.voyage3 ul li {
+    margin-bottom: .5em;
+}
 
 .voyage3 {
-    background: rgb(218, 172, 139);
     font-size: 1.5em;
+    background: darkseagreen;
 }
-.voyage3 p {
-    text-align: justify;
-    text-indent: 2em;
+
+#selector a:link,
+#selector a:visited,
+#selector a:active {
+    color: white;
 }
+
+#selector a:hover {
+    text-decoration: underline;
+}
+
+#selector a {
+    text-transform: uppercase;
+    font-family: upper-title;
+    font-size: .9em;
+    text-decoration: none;
+    text-shadow: 2px 2px black;
+}
+
+.voyage3 figcaption {
+    font-size: .8em;
+    font-style: italic;
+}
+
+.voyage3 iframe {
+    border: 0px;
+}
+
+/* ============== GENERIC =========*/
 .flex {
     display: flex;
 }
-#link-one {
-    display: flex;
+
+.row {
+    flex-direction: row;
 }
-#link-two {
-    display:flex;
-    justify-content: space-evenly;
+
+.col {
+    flex-direction: column;
 }
-.voyage3 #rio-janeiro h1{
+
+.h-cent {
+    justify-content: center;
+}
+
+.v-cent {
+    align-items: center;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.txtcent {
+    text-align: center;
+}
+
+.name {
+    font-style: italic;
+}
+
+/* ============== SECTION SELECTOR============= */
+.voyage3 #rio-janeiro h1 {
     color: white;
     text-shadow: 2px 2px black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: title;
+    font-family: upper-title;
     height: 300px;
-    width: 95%;
+    width: 100%;
+    margin: 1%;
     font-size: 3.5em;
     background: top no-repeat url(../images/brazil-header3.jpg);
     letter-spacing: .1em;
     background-size: cover;
     border: .25em solid white;
 }
-.voyage3 article h2{
-    text-align: center;
+
+#link-one {
+    justify-content: space-evenly;
+    margin: 2% 0;
 }
-.voyage3 #selector {
-    top: 100px;
-    height: 20vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+#link-two {
+    justify-content: space-evenly;
+    margin: 2% 0;
 }
+
 .voyage3 #selector a {
     display: flex;
     align-items: center;
@@ -70,51 +149,59 @@
     width: 300px;
     border: 10px solid white;
 }
-.voyage3 #selector a div{
-    text-align: center;
-    border: .2em dotted black
-}
-.voyage3 a:active, .voyage3 a:visited {
+
+.voyage3 a:active,
+.voyage3 a:visited {
     text-decoration: none;
+    color: black;
 }
-/* ============ BG-Links =============*/
+
+/* ============ BG-Links: selector ============= */
 #corcovado {
     background: center no-repeat url(../images/corcovado2.jpg);
     background-size: cover;
 }
+
 #pain {
     background: center no-repeat url(../images/pao.jpg);
     background-size: cover;
 }
+
 #copa {
     background: center no-repeat url(../images/copa2.jpg);
     background-size: cover;
 }
+
 #carnaval {
     background: center no-repeat url(../images/carnaval.jpg);
     background-size: cover;
 }
+
 #metro {
     background: center no-repeat url(../images/metro.jpg);
     background-size: cover;
 }
 
-/* =========================== */
-#selector a {
-    text-transform: uppercase;
-    font-family: title;
-    font-size: .9em;
-    text-decoration: none;
+/* ========== CORCOVADO ========== */
+.voyage3 #corcavado-media {
+    width: 80%;
+    margin: 50px auto;
 }
-#selector a:link, #selector a:visited, #selector a:active {
-    color: white;
+
+/* ========== PAIN ============ */
+.voyage3 #pain-media {
+    margin: 100px auto;
 }
-#selector a:hover{
-    text-decoration: underline;
+
+/* ========= CARNAVAL========== */
+.voyage3 #par-one {
+    margin: 0;
+    height: 90vh;
+    background: center no-repeat url(../images/carnaval1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
-#selector a {
-    text-shadow: 2px 2px black;
-}
-#selector {
-    height: 500px;
+
+.voyage3 #carnaval-media iframe {
+    margin: 50px 0
 }
