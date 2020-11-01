@@ -1,30 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="css/voyages.css">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/voyages.css">
+    <link rel="icon" type="image/png" href="images/icon_onglet_voyage_accueil.png">
+    <!--police p_-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
     <title>Accueil</title>
 </head>
 
-<body>
+<body class="accueil">
     <header class="header_container">
         <nav class="header_nav">
-
             <ul>
                 <li class="deroulant"><a class="bouton_header" href="voyages.html">Continents
                     </a>
                     <ul class="sous">
                         <li class="li_deroulant">Europe</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage1.html">Pays-bas</a></li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage2.html">Irlande</a></li>
+                        <li><a class="a_black" href="voyages/voyage1.html">Pays-bas</a></li>
+                        <li><a class="a_black" href="voyages/voyage2.html">Irlande</a></li>
                         <li class="li_deroulant">Asie</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage4.html">Russie</a></li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage6.html">Japon</a></li>
+                        <li><a class="a_black" href="voyages/voyage4.html">Russie</a></li>
+                        <li><a class="a_black" href="voyages/voyage6.html">Japon</a></li>
                         <li class="li_deroulant">Océanie</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage5.html">Australie</a></li>
+                        <li><a class="a_black" href="voyages/voyage5.html">Australie</a></li>
                         <li class="li_deroulant">Amérique du sud</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage3.html">Brésil</a></li>
+                        <li><a class="a_black" href="voyages/voyage3.html">Brésil</a></li>
                     </ul>
                 </li>
             </ul>
@@ -33,14 +39,14 @@
 
                     <ul class="sous">
                         <li class="li_deroulant">Joris</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage1.html">Pays-bas</a></li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage2.html">Irlande</a></li>
+                        <li><a class="a_black" href="voyages/voyage1.html">Pays-bas</a></li>
+                        <li><a class="a_black" href="voyages/voyage2.html">Irlande</a></li>
                         <li class="li_deroulant">Guillaume</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage3.html">Brésil</a></li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage4.html">Russie</a></li>
+                        <li><a class="a_black" href="voyages/voyage3.html">Brésil</a></li>
+                        <li><a class="a_black" href="voyages/voyage4.html">Russie</a></li>
                         <li class="li_deroulant">Cindy</li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage5.html">Japon</a></li>
-                        <li><a class="a_black" href="../voyages/voyages/voyage6.html">Australie</a></li>
+                        <li><a class="a_black" href="voyages/voyage6.html">Japon</a></li>
+                        <li><a class="a_black" href="voyages/voyage5.html">Australie</a></li>
                     </ul>
                 </li>
             </ul>
@@ -48,48 +54,86 @@
     </header>
 
     <main>
-
-        <body class="accueil">
-            <section>
-                <div class="select">
-                    <div class="pict" id="one">
-                        <h3>Pays-Bas</h3>
-                    </div>
-                    <div class="pict" id="two">
-                        <h3>Irlande</h3>
-                    </div>
-                    <div class="pict" id="three">
-                        <h3>Brésil</h3>
-                    </div>
-                    <div class="pict" id="four">
-                        <h3>Russie</h3>
-                    </div>
-                    <div class="pict" id="five">
-                        <h3>Australie</h3>
-                    </div>
-                    <div class="pict" id="six">
-                        <h3>Japon</h3>
-                    </div>
+        <section>
+            <div class="select">
+                <div class="pict" id="one">
+                    <h3>Pays-Bas</h3>
                 </div>
-            </section>
-            <section id="second-section">
-                <p>
-                    second section
-                </p>
-            </section>
+                <div class="pict" id="two">
+                    <h3>Irlande</h3>
+                </div>
+                <div class="pict" id="three">
+                    <h3>Brésil</h3>
+                </div>
+                <div class="pict" id="four">
+                    <h3>Russie</h3>
+                </div>
+                <div class="pict" id="five">
+                    <h3>Australie</h3>
+                </div>
+                <div class="pict" id="six">
+                    <h3>Japon</h3>
+                </div>
+            </div>
+        </section>
+        <section id="second-section">
+            <div id="dimension_section">
+                <article class="article_2ndsection">
+                    <img class="img_guide_2ndsection" alt="photo guide Joris" src="images/netero.png">
+                    <p class="p_sectin2nd"><strong>Joris</strong>, jeune guide vous fera visiter des pays européens
+                    </p>
+                    <article class="article_flag">
+                        <img alt=" drapeau pays bas" class="flag_2ndsection" src="images/drapeau_irlande.jpg">
+                        <img alt="drapeau irlande" class="flag_2ndsection" src="images/drapeau_pays_bas.svg">
+
+                    </article>
+                </article>
+                <article class="article_2ndsection">
+                    <img class="img_guide_2ndsection" alt="photo guide Guillaume"
+                        src="images/guillaume_cannibal_corps.png">
+                    <p class="p_sectin2nd"><strong>dWh</strong> aime Cannibal Corpse, c'est donc un bon guide!
+                    </p>
+                    <article class="article_flag">
+                        <img alt="drapeau russie" class="flag_2ndsection" src="images/RUSSIA-flag.jpg">
+                        <img alt="drapeau bresil" class="flag_2ndsection" src="images/BRAZIL-flag-800.png">
+
+                    </article>
+                </article>
+                <article class="article_2ndsection">
+                    <img class="img_guide_2ndsection" alt="photo guide Joris" src="images/rondoudou.png">
+                    <p class="p_sectin2nd"><strong>Cindy</strong>, vous fera découvrir ses destination de rêve à
+                        l'autre bout du
+                        monde</p>
+                    <article class="article_flag">
+                        <img alt="drapeau autralie" class="flag_2ndsection" src="images/drapeau_australie.png">
+                        <img alt="drapeau japon" class="flag_2ndsection" src="images/drapeau_japon.jpg">
+                    </article>
+                </article>
+            </div>
+        </section>
 
     </main>
     <footer id="footer_partage">
-        <article class="footer_article">
-            <img alt="joris dev" class="dev_img_dimension" src="../voyages/images/netero.png">
-            <p>HARDJOJO</p>
-        </article>
+        <section class="multi_signature">
+            <article class="footer_article_signature">
+                <img alt="joris dev" class="dev_img_dimension" src="../voyages/images/netero.png">
+                <p>HARDJOJO</p>
+            </article>
+            <article class="footer_article_signature">
+                <img alt="joris dev" class="dev_img_dimension" src="../voyages/images/guillaume_cannibal_corps.png">
+                <p>GUILLAUME</p>
+            </article>
+            <article class="footer_article_signature">
+                <img alt="joris dev" class="dev_img_dimension" src="../voyages/images/rondoudou.png">
+                <p>KIRITSUKO
+                </p>
+            </article>
+        </section>
         <article class="footer_article">
             <a class="reseaux" href="https://www.facebook.com" target="_blank"> G</a>
             <a class="reseaux" href="https://www.instagram.com" target="_blank">e</a>
             <a class="reseaux" href="https://twitter.com" target="_blank">Ö</a>
             <a class="reseaux" href="https://www.youtube.com" target="_blank">ú</a>
-            <p>bouton nous contacter</p>
         </article>
         <article class="footer_article">
             <a href="mailto:lemeilleur_site_voyage@bg+pro.com" class="bouton_contact">Nous contacter</a>

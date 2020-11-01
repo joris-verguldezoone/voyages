@@ -136,7 +136,7 @@ content:
 
 .footer_article_signature {
     font-family: 'Zenzai-Itacha.ttf';
-    font-size: 1em;
+    font-size: 1.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +339,64 @@ content:
 #second-section {
     /* background: plum; */
     margin-top: 200px;
-    height: 1000px;
-    /* background: yellow; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.article_2ndsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 10px black solid;
+    width: 33.3%;
+    align-items: center;
+    border-radius: 0.5em;
+    padding: 20px;
+    background-color: lightblue;
+
+}
+
+.img_guide_2ndsection {
+    height: 250px;
+    width: 250px;
+}
+
+#dimension_section {
+    width: 60%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 200px;
+
+}
+
+.p_sectin2nd {
+    font-size: 1.5em;
+    line-height: 1.5;
+    text-align: justify;
+    word-spacing: 0.3em;
+    width: 90%;
+    font-family: 'Lato', sans-serif;
+}
+
+.article_flag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flag_2ndsection {
+    height: 80px;
+    width: 100px;
+}
+
+.multi_signature {
+    display: flex;
+    flex-direction: row;
+    width: 33.3%;
+    justify-content: space-around;
+
 }
